@@ -1,4 +1,4 @@
-body{color: black; background-color: orange;}
+h1{color: greenyellow; background-color: black; font-family:serif; font-weight:bold}
 h2{color: white; background-color: turquoise;}
 .torikesi{text-decoration: line-through;}
-.nkm{word-break: normal;}
+.nkm{word-break: normal; color: orange; background-color: black;}
