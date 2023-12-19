@@ -1,30 +1,31 @@
 @charset "UTF-8";
 html {
     font-size: 100%;
-    background-color: rgb(255, 231, 255);
+    background-color: black;
+    color: white;
     overflow-y: scroll;
 }
 header {
 }
 .main-header {
     text-decoration: None;
-    color: rgb(32, 16, 12);
+    color: rgb(173, 255, 47);
     display: block;
     display: flex;
     justify-content: space-between;
 }
 .main-header a {
     text-decoration: None;
-    color: rgba(32, 16, 12, .7);
+    color: rgba(173, 255, 47, .7);
     font-size: 1.375rem;
     margin-top: 34px;
 }
 .main-header a:hover {
-    color: rgb(255, 123, 255);
+    color: rgb(255, 0, 0);
 }
 body{
     line-height: 1.7;
-    color: rgba(32, 16, 12, .7);
+    color: rgba(173, 255, 47, .7);
 }
 .main-nav {
     display: flex;
@@ -47,7 +48,7 @@ footer {
     margin: 20vh;
 }
 footer p {
-    color: rgb(32, 16, 12);
+    color: rgb(173, 255, 47);
     font-size: 0.9rem;
 }
 .main-name {
@@ -67,7 +68,7 @@ footer p {
 }
 
 p.usui {
-    color: rgba(32, 16, 12, .7);
+    color: rgba(192, 192, 192, .7);
     text-align: center;
 }
 
@@ -84,8 +85,8 @@ p.usui {
     text-align: center;
     border-bottom: 2px solid rgba(32, 16, 12, .125);
     margin: 30px auto 30px auto;
-    color: rgb(32, 16, 12);
+    color: greenyellow;
 }
 .abouts p {
-    color: rgb(32, 16, 12);
+    color: greenyellow;
 }
