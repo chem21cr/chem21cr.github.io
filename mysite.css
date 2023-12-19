@@ -91,3 +91,6 @@ p.usui {
 .abouts p {
     color: orange;
 }
+.abouts a {
+    color: fuchsia;
+}
