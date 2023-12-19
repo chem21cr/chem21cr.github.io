@@ -59,6 +59,7 @@ footer p {
     display: flex;
     justify-content: center;
     list-style: none;
+    background-color: white;
 
 }
 .icons img {
