@@ -95,21 +95,3 @@ p.usui {
     color: plum;
 }
 
-@media all and (max-width:900px) {
-    .main-header {
-        flex-direction: column;
-        text-decoration: None;
-        color: rgb(32, 16, 12);
-    }
-    
-    .main-nav{
-        justify-content: center;
-    }
-
-    .main-header a{
-        text-align: center;
-    }
-    .main-nav li {
-        margin: 0 auto;
-    }
-}
