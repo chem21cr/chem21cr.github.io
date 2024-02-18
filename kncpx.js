@@ -18,7 +18,7 @@ function henk(ssj){
 function henk01(ssj){
     let sj = Number(ssj)
     if(sj<100){return henk(sj)}else
-    if(sj>100, sj<1000){
+    if(sj=>100, sj<1000){
         let b11 = Math.floor(sj/100)
         let b12 = sj%100
         if(b12==0){return ksj02[b11]+'百'}else{
@@ -29,7 +29,7 @@ function henk01(ssj){
 function henk02(ssj){
     let sj = Number(ssj)
     if(sj<1000){return henk01(sj)}else
-    if(sj>1000, sj<10000){
+    if(sj=>1000, sj<10000){
         let b21 = Math.floor(sj/1000)
         let b22 = sj%1000
         if(b22==0){return ksj02[b21]+'千'}else{
@@ -40,7 +40,7 @@ function henk02(ssj){
 function henk03(ssj){
     let sj = Number(ssj)
     if(sj<10000){return henk02(sj)}else
-    if(sj>10000, sj<100000000){
+    if(sj=>10000, sj<100000000){
         let b31 = Math.floor(sj/10000)
         let b32 = sj%10000
         if(b32==0){return henk02(b31)+'万'}else{
@@ -49,7 +49,29 @@ function henk03(ssj){
 }
 
 
+function henk04(ssj){
+    let sj = Number(ssj)
+    if(sj<100000000){return henk03(sj)}else
+    if(sj=>100000000, sj<1000000000000){
+        let b31 = Math.floor(sj/100000000)
+        let b32 = sj%100000000
+        if(b32==0){return henk03(b31)+'億'}else{
+        return henk03(b31)+'億'+henk03(b32)}
+    }else{return String(sj)}
+}
+
+function henk05(ssj){
+    let sj = Number(ssj)
+    if(sj<1000000000000){return henk04(sj)}else
+    if(sj=>1000000000000){
+        let b31 = Math.floor(sj/1000000000000)
+        let b32 = sj%1000000000000
+        if(b32==0){return henk04(b31)+'兆'}else{
+        return henk04(b31)+'兆'+henk04(b32)}
+    }else{return String(sj)}
+}
 
 
-document.querySelector("div#result").innerHTML = henk03(str);
+
+document.querySelector("div#result").innerHTML = henk05(str);
 }
