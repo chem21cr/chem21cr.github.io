@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>漢数字に変換するよ</title>
+        <meta name="description" content="役に立たない道具">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+        <link rel="stylesheet" href="mysite.css">
+        <style>
+textarea#test{
+width:100%;
+height:200px;
+    background-color:white;
+}
+            input#bt01{
+                background-color:white;
+                text-align: center;
+            }
+            div#result{
+                background-color:white;
+                color:black;
+            }
+</style>
+        <script type="text/javascript" src="kncpx.js"></script>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header class="main-header wrapper">
+            <a href="index.htm">くろむ</a>
+            <nav>
+                <ul class="main-nav">
+                    <li><a class="main-header" href="about.htm">about</a></li>
+                    <li><a class="main-header" href="https://twitter.com/III_Cr_ITF21">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <a href="https://twitter.com/III_Cr_ITF21"><img src="icon_ai01.jpg" alt="アイコン画像" 
+        style="border-radius: 25%; height: 150px; width: 150px; margin:auto; display: block; margin-top: 50px;"></a>
+        <h2 class="main-name" style="color: greenyellow; text-shadow: 0px 0px 10px greenyellow;">くろむ/krom</h2>
+        <p class="usui">漢数字に変換</p>
+        <div class="wrapper2">
+            <div class="abouts">
+                <p>入力された数字を漢数字に変換します。0~99999999まで対応。</p>
+            </div>
+        </div>
+
+      <textarea id="test">
+      </textarea>
+      <input id="bt01" type="button" value="変換" onclick="shinkana();"/>
+      </br>
+      <div id="result"></div>
+    </br>
+    </body>
+
+    <footer>
+        <div class="wrapper">
+            <p><small>&copy; 2023 krom all rights reserved.</small></p>
+        </div>
+    </footer>
+</html>
